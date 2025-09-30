@@ -22,7 +22,22 @@ Capture screenshots of the waveform and save the simulation logs. These will be 
 # Code
 # RAM
 ## RTL Verilog code ##
-```
+```verilog
+
+module ram (input clk,input rst,input en,input [7:0] datain,input [9:0] address,output reg [7:0] dataout);
+    reg [7:0] mem [1023:0];
+    always @(posedge clk) begin
+    if (rst) begin
+    dataout <= 8'b0;
+    end
+    else if (en) begin
+    mem[address] <= datain;
+    end
+    else begin
+    dataout <= mem[address];
+    end
+end
+endmodule
 ```
 # Test bench
 verilog
