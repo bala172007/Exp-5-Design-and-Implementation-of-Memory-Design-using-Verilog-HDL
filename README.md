@@ -21,7 +21,7 @@ Capture screenshots of the waveform and save the simulation logs. These will be 
 
 # Code
 # RAM
-## RTL Verilog code ##
+## RTL code ##
 ```verilog
 
 module ram (input clk,input rst,input en,input [7:0] datain,input [9:0] address,output reg [7:0] dataout);
@@ -82,9 +82,8 @@ endmodule
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/02232c2c-b83c-47bf-b402-fb4b98c7bbaa" />
 
 # ROM
- #RTL Code
- ```
-verilog
+ # RTL Code
+ ```verilog
 module mem_rom (input clk,input rst,input [9:0]address,output reg [7:0] dataout);
     reg [7:0] mem_rom [1023:0];
     integer i;
@@ -103,9 +102,8 @@ module mem_rom (input clk,input rst,input [9:0]address,output reg [7:0] dataout)
 endmodule
 ```
  
- #Test bench
- ```
-verilog
+ # Test bench
+ ```verilog
 module mem_rom_tb;
     reg clk_t,rst_t;
     reg [9:0]address_t;
@@ -136,8 +134,7 @@ endmodule
 
  # FIFO
  # RTL Code
-```
-    verilog
+```verilog
     module fifo #(parameter DEPTH=8, DATA_WIDTH=8) (input clk, rst_n,
  input w_en, r_en,
  input [DATA_WIDTH-1:0] data_in,
@@ -177,8 +174,7 @@ endmodule
 endmodule
  ```
  # Test bench
-```
-    verilog
+```verilog
 module fifo_tb;
 reg clk_t, rst_t;
 reg w_en_t, r_en_t;
