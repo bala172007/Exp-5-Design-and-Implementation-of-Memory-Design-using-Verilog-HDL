@@ -78,7 +78,7 @@ reg [9:0] address_t;
 endmodule
 
 ```
-## output Waveform
+## Output Waveform
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/02232c2c-b83c-47bf-b402-fb4b98c7bbaa" />
 
 # ROM
@@ -128,7 +128,7 @@ module mem_rom_tb;
 endmodule
 ```
 
-# output Waveform
+# Output Waveform
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/df22740d-b0f6-46ed-b11e-870eb3c2ec37" />
 
 
@@ -210,7 +210,7 @@ endmodule
 
 
 ```
-#output Waveform
+## Output Waveform
 
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/b4917b19-89bb-48c5-9b3f-0255d42e4ee5" />
 
